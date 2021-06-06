@@ -27,6 +27,7 @@ RUN set -xe && \
     htop \
     wget \
     curl \
+    whois \
     dialog \
     autogen \
     tzdata \
