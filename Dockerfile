@@ -62,7 +62,7 @@ RUN set -xe \
     && git clone --depth=1 https://github.com/vim/vim.git /vim \
     && ( \
         cd /vim \
-        && ./configure --with-features=huge --enable-multibyte \
+        && ./configure --with-features=huge --enable-multibyte --enable-python3interp=yes \
 	    && make \
         && make install \
         && cd .. \
