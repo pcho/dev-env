@@ -20,6 +20,8 @@ RUN set -xe && \
     ncurses-dev \
     libevent-dev \
     libpcre++-dev \
+    python3-pip \
+    python3-venv \
     zsh \
     git \
     cmake \
