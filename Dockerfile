@@ -22,7 +22,7 @@ RUN set -xe && \
     libpcre++-dev \
     python3-pip \
     python3-venv \
-    fdfind \
+    fd-find \
     zsh \
     git \
     cmake \
