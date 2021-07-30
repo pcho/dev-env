@@ -39,6 +39,7 @@ RUN set -xe && \
     autoconf \
     libtool \
     locales \
+    shellcheck \
     silversearcher-ag
 
 # Sets Timezone to EU/Berlin
