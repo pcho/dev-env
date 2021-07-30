@@ -111,8 +111,6 @@ RUN set -xe && \
     nodejs \
     yarn
 
-RUN yarn set version berry
-
 # Change default shell to ZSH
 RUN chsh -s /usr/bin/zsh
 
