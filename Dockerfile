@@ -111,6 +111,11 @@ RUN set -xe && \
     nodejs \
     yarn
 
+# Install GitHub CLI
+RUN wget https://github.com/cli/cli/releases/download/v1.13.1/gh_1.13.1_linux_amd64.deb
+RUN dpkg -i gh_1.13.1_linux_amd64.deb
+RUN rm -rf gh_1.13.1_linux_amd64.deb
+
 # Change default shell to ZSH
 RUN chsh -s /usr/bin/zsh
 
