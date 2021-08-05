@@ -40,6 +40,7 @@ RUN set -xe && \
     libtool \
     locales \
     shellcheck \
+    visidata \
     silversearcher-ag
 
 # Sets Timezone to EU/Berlin
