@@ -30,6 +30,7 @@ RUN set -xe && \
     htop \
     wget \
     curl \
+    unzip \
     whois \
     dialog \
     autogen \
@@ -116,6 +117,9 @@ RUN set -xe && \
 RUN wget https://github.com/cli/cli/releases/download/v1.13.1/gh_1.13.1_linux_amd64.deb
 RUN dpkg -i gh_1.13.1_linux_amd64.deb
 RUN rm -rf gh_1.13.1_linux_amd64.deb
+
+# Install httpie
+python3 -m pip install --upgrade https://github.com/httpie/httpie/archive/master.tar.gz
 
 # Change default shell to ZSH
 RUN chsh -s /usr/bin/zsh
