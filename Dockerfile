@@ -119,7 +119,7 @@ RUN dpkg -i gh_1.13.1_linux_amd64.deb
 RUN rm -rf gh_1.13.1_linux_amd64.deb
 
 # Install httpie
-python3 -m pip install --upgrade https://github.com/httpie/httpie/archive/master.tar.gz
+RUN pthon3 -m pip install --upgrade https://github.com/httpie/httpie/archive/master.tar.gz
 
 # Change default shell to ZSH
 RUN chsh -s /usr/bin/zsh
