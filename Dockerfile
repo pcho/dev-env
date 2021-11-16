@@ -63,11 +63,6 @@ ENV LC_ALL en_US.UTF-8
 # Unminimize
 RUN yes | unminimize
 
-# Install fzf
-RUN git clone --depth 1 https://github.com/junegunn/fzf.git /.fzf \
-    && /.fzf/install
-
-
 # Install VIM from source
 RUN set -xe \
     && git clone --depth=1 https://github.com/vim/vim.git /vim \
