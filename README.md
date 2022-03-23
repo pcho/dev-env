@@ -1,6 +1,6 @@
 # My Development Environment
 
-Unminimized Ubuntu Hirsute Hippo with bunch of additional features:
+Unminimized Ubuntu Impish Indri with bunch of additional features:
 
 - Default shell is ZSH
 - VIM Huge built from source
